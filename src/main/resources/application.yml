@@ -7,3 +7,34 @@ server:
     enabled: false
     mime-types: text/html,text/xml,text/plain,text/css,text/javascript,application/javascript,application/json,application/xml,application/xhtml+xml,image/webp,text/javascript,text/plain,text/html,application/xhtml+xml,application/xml,text/css,text/csv,image/png,image/jpeg,image/gif,image/svg+xml
     min-response-size: 1024
+
+#trace debug info warn error
+logging:
+  level:
+    com.yc: info
+    root: info
+  file:
+    name: logs/yc.log
+  logback:
+    rollingpolicy:
+      max-file-size: 10MB
+
+#spring:
+#  devtools:
+#    restart:
+#      enabled: true  #是否之车自动重启(热部署
+#      additional-paths: src/main/java #设置监听源码变更的目录 -> 这个目录中的文件变更，则重启
+#      exclude: static/** #排除监听的目录，不重启
+
+product:
+  pname: apple
+  price: 20.5
+  is-used: true
+  man-date: 2021/09/09
+  attributes: {'color': 'red','type': 'good'}
+  address:
+    province: beijing
+    city: beijing
+  types:
+    - 1
+    - 2
