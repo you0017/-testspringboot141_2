@@ -33,7 +33,7 @@ product:
   man-date: 2021/09/09
   attributes: {'color': 'red','type': 'good'}
   address:
-    province: beijing
+    province: 长沙
     city: beijing
   types:
     - 1
